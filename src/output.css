@@ -10,6 +10,7 @@
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
@@ -198,6 +199,9 @@
   .mt-\[-50px\] {
     margin-top: -50px;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
   .mt-\[50px\] {
     margin-top: 50px;
   }
@@ -210,14 +214,23 @@
   .hidden {
     display: none;
   }
+  .h-\[1\] {
+    height: 1;
+  }
   .h-\[50px\] {
     height: 50px;
   }
   .h-\[100px\] {
     height: 100px;
   }
+  .h-\[170px\] {
+    height: 170px;
+  }
   .w-\[1\] {
     width: 1;
+  }
+  .w-\[10px\] {
+    width: 10px;
   }
   .w-\[100px\] {
     width: 100px;
@@ -227,6 +240,12 @@
   }
   .w-\[130px\] {
     width: 130px;
+  }
+  .w-\[150px\] {
+    width: 150px;
+  }
+  .w-\[170px\] {
+    width: 170px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -288,6 +307,9 @@
   .rounded-\[5px\] {
     border-radius: 5px;
   }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
   .rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -303,6 +325,17 @@
   .rounded-l-\[15px\] {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+  }
+  .border-\[0\.3px\] {
+    border-style: var(--tw-border-style);
+    border-width: 0.3px;
+  }
+  .border-\[0\.5px\] {
+    border-style: var(--tw-border-style);
+    border-width: 0.5px;
+  }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
   }
   .bg-\[\#24AB70\] {
     background-color: #24AB70;
@@ -373,6 +406,9 @@
   .text-\[\#24AB70\] {
     color: #24AB70;
   }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -438,6 +474,11 @@
       flex-direction: row;
     }
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -511,6 +552,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
