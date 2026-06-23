@@ -12,6 +12,7 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
@@ -184,20 +185,11 @@
   .relative {
     position: relative;
   }
-  .top-\[-100px\] {
-    top: -100px;
-  }
   .top-\[-120px\] {
     top: -120px;
   }
-  .top-\[-150px\] {
-    top: -150px;
-  }
   .m-auto {
     margin: auto;
-  }
-  .mt-\[-50px\] {
-    margin-top: -50px;
   }
   .mt-\[20px\] {
     margin-top: 20px;
@@ -214,23 +206,29 @@
   .hidden {
     display: none;
   }
-  .h-\[1\] {
-    height: 1;
-  }
-  .h-\[50px\] {
-    height: 50px;
-  }
-  .h-\[100px\] {
-    height: 100px;
+  .h-\[00px\] {
+    height: 00px;
   }
   .h-\[170px\] {
     height: 170px;
   }
-  .w-\[1\] {
-    width: 1;
+  .h-\[200px\] {
+    height: 200px;
   }
-  .w-\[10px\] {
-    width: 10px;
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[370px\] {
+    height: 370px;
+  }
+  .h-\[390px\] {
+    height: 390px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[450px\] {
+    height: 450px;
   }
   .w-\[100px\] {
     width: 100px;
@@ -241,17 +239,11 @@
   .w-\[130px\] {
     width: 130px;
   }
-  .w-\[150px\] {
-    width: 150px;
-  }
   .w-\[170px\] {
     width: 170px;
   }
   .w-\[200px\] {
     width: 200px;
-  }
-  .w-\[250px\] {
-    width: 250px;
   }
   .w-\[300px\] {
     width: 300px;
@@ -259,20 +251,17 @@
   .w-\[320px\] {
     width: 320px;
   }
-  .w-\[350px\] {
-    width: 350px;
-  }
   .w-\[450px\] {
     width: 450px;
-  }
-  .w-\[750px\] {
-    width: 750px;
   }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -301,12 +290,6 @@
   .gap-\[30px\] {
     gap: 30px;
   }
-  .rounded-\[1\] {
-    border-radius: 1;
-  }
-  .rounded-\[5px\] {
-    border-radius: 5px;
-  }
   .rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -330,10 +313,6 @@
     border-style: var(--tw-border-style);
     border-width: 0.3px;
   }
-  .border-\[0\.5px\] {
-    border-style: var(--tw-border-style);
-    border-width: 0.5px;
-  }
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
@@ -343,32 +322,14 @@
   .bg-\[\#24ab713b\] {
     background-color: #24ab713b;
   }
-  .bg-\[\#24ab715f\] {
-    background-color: #24ab715f;
-  }
   .bg-\[\#40e0d028\] {
     background-color: #40e0d028;
   }
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
-  }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
-  }
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
-  }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
-  }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
+  .bg-\[\#F4FBF8\] {
+    background-color: #F4FBF8;
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .p-1 {
-    padding: var(--spacing);
   }
   .p-\[10px\] {
     padding: 10px;
@@ -378,10 +339,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -406,11 +363,17 @@
   .text-\[\#24AB70\] {
     color: #24AB70;
   }
+  .text-\[1\] {
+    color: 1;
+  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -421,12 +384,6 @@
   .shadow-xs {
     --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-black {
-    --tw-shadow-color: #000;
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
-    }
   }
   .shadow-gray-500 {
     --tw-shadow-color: oklch(55.1% 0.027 264.364);
@@ -457,11 +414,6 @@
   .lg\:w-\[450px\] {
     @media (width >= 64rem) {
       width: 450px;
-    }
-  }
-  .lg\:w-\[750px\] {
-    @media (width >= 64rem) {
-      width: 750px;
     }
   }
   .lg\:w-\[850px\] {
