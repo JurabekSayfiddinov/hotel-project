@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -15,6 +16,7 @@
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-neutral-50: oklch(98.5% 0 0);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -188,6 +190,15 @@
   .top-\[-120px\] {
     top: -120px;
   }
+  .top-\[-150px\] {
+    top: -150px;
+  }
+  .top-\[-180px\] {
+    top: -180px;
+  }
+  .top-\[-200px\] {
+    top: -200px;
+  }
   .m-auto {
     margin: auto;
   }
@@ -230,6 +241,15 @@
   .h-\[450px\] {
     height: 450px;
   }
+  .w-\[3\] {
+    width: 3;
+  }
+  .w-\[10px\] {
+    width: 10px;
+  }
+  .w-\[80px\] {
+    width: 80px;
+  }
   .w-\[100px\] {
     width: 100px;
   }
@@ -256,6 +276,9 @@
   }
   .w-\[450px\] {
     width: 450px;
+  }
+  .w-\[650px\] {
+    width: 650px;
   }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
@@ -345,6 +368,9 @@
   .bg-\[\#FAFAFA\] {
     background-color: #FAFAFA;
   }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -356,6 +382,10 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -372,6 +402,12 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -423,9 +459,24 @@
       display: none;
     }
   }
+  .lg\:h-0 {
+    @media (width >= 64rem) {
+      height: 0;
+    }
+  }
   .lg\:h-\[100px\] {
     @media (width >= 64rem) {
       height: 100px;
+    }
+  }
+  .lg\:h-\[120px\] {
+    @media (width >= 64rem) {
+      height: 120px;
+    }
+  }
+  .lg\:h-\[150px\] {
+    @media (width >= 64rem) {
+      height: 150px;
     }
   }
   .lg\:w-\[450px\] {
@@ -433,14 +484,34 @@
       width: 450px;
     }
   }
+  .lg\:w-\[650px\] {
+    @media (width >= 64rem) {
+      width: 650px;
+    }
+  }
+  .lg\:w-\[750px\] {
+    @media (width >= 64rem) {
+      width: 750px;
+    }
+  }
   .lg\:w-\[850px\] {
     @media (width >= 64rem) {
       width: 850px;
     }
   }
+  .lg\:w-\[950px\] {
+    @media (width >= 64rem) {
+      width: 950px;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:bg-neutral-50 {
+    @media (width >= 64rem) {
+      background-color: var(--color-neutral-50);
     }
   }
 }
